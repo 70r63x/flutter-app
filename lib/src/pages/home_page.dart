@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget{
 
   final theme = new TextStyle(fontSize: 25);
+  final cont = 10;
 
   @override
   Widget build(BuildContext context) {
@@ -19,13 +20,14 @@ class HomePage extends StatelessWidget{
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('Hola mundo', style: theme),
-            Text('Hola mundo 2', style: theme),
+            Text('$cont', style: theme)
           ],
           )
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           print("activado");
+          
         },
         child: Icon( Icons.add ),
       ),
